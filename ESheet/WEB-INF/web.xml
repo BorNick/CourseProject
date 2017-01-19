@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   
+xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+
+  <servlet>
+      <servlet-name>LoginServlet</servlet-name>
+      <servlet-class>view.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ProfileServlet</servlet-name>
+    <servlet-class>view.ProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProfileServlet</servlet-name>
+    <url-pattern>/ProfileServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>view.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>AllSheetsServlet</servlet-name>
+    <servlet-class>view.AllSheetsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AllSheetsServlet</servlet-name>
+    <url-pattern>/AllSheets</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SheetServlet</servlet-name>
+    <servlet-class>view.SheetServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SheetServlet</servlet-name>
+    <url-pattern>/Sheet/*</url-pattern>
+  </servlet-mapping>
+
+    <servlet>
+    <servlet-name>AllRolesServlet</servlet-name>
+    <servlet-class>view.AllRolesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AllRolesServlet</servlet-name>
+    <url-pattern>/AllRoles</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>AllUsersServlet</servlet-name>
+    <servlet-class>view.AllUsersServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AllUsersServlet</servlet-name>
+    <url-pattern>/AllUsers</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>EditUserServlet</servlet-name>
+    <servlet-class>view.EditUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditUserServlet</servlet-name>
+    <url-pattern>/EditUser/*</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

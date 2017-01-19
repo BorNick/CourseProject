@@ -1,0 +1,14 @@
+<script>
+window.onload = function(){document.getElementById("url").setAttribute("value", document.URL);};
+</script>
+
+<ul class="teacherMenu">
+   <li class="teacherMenu">
+      <form action="http://localhost:8080/ESheet/Sheet" method="post">
+	     <input id="url" type="text" name="id" value="no url" hidden>
+	     Height:<input type="number" name="height" min="1" required><br>
+         Width: <input type="number" name="width" min="1" required><br>
+         <input type="submit" value="Change Size">
+      </form>
+   </li>
+</ul>

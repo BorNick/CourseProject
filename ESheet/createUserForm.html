@@ -1,0 +1,90 @@
+<head>
+<script type="text/javascript" src="http://yandex.st/jquery/1.6.0/jquery.min.js"></script>
+<style>
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ff5500;
+}
+
+ul.teacherMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+li.teacherMenu{
+    float: left;
+    background-color: #ffffff;
+}
+li.menu {
+    float: left;
+}
+
+li.menu a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li.menu a:hover {
+    background-color: #111111;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+div.sheets a{
+    background-color: #b3b3b3;
+    color: white;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+}div.sheets a:hover {
+    background-color: #111111;
+}
+
+</style>
+</head>
+<body>
+
+<ul class="menu">
+  <li class="menu"><a href="http://localhost:8080/ESheet/index.html">Home</a></li>
+  <li class="menu"><a href="http://localhost:8080/ESheet/login.html">Login</a></li>
+  <li class="menu"><a href="http://localhost:8080/ESheet/LogoutServlet">Logout</a></li>
+  <li class="menu"><a href="http://localhost:8080/ESheet/AllSheets">All Sheets</a></li>
+  <li class="menu"><a href="http://localhost:8080/ESheet/AllUsers">All Users</a></li>
+  <li class="menu"><a href="http://localhost:8080/ESheet/AllRoles">All Roles</a></li>
+</ul>
+<br>
+
+
+
+<form action="http://localhost:8080/ESheet/EditUser" method="post">
+  <input type="text" name="action" value="create" hidden>
+  User name:
+  <input type="text" name="username" required>
+  <br>
+  Password:
+  <input type="text" name="password" required>
+  <br>
+  Role:
+  <input type="text" name="role" required>
+  <br>
+  Enter sheet ids sepparated by commas<br>
+  <input type="text" name="sheets">
+  <br>
+  <input type="submit" value="Create User">
+</form> 
+
+</body>
+</html>

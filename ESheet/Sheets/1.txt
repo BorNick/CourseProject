@@ -1,0 +1,5 @@
+ ~test1~test2~exam
+Angus~5~5~5
+Frodo1~3~3~3
+Optimus~3~3~4
+vasya ~5 ~5 ~3 
